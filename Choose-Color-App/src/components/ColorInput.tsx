@@ -21,6 +21,9 @@ function ColorInput({ onColorChange }: ColorInputProps) {
 
     return (
         <div className="colorBox">
+
+            <h1>Type a color name</h1>
+            <p>Examples: red, blue, green, yellow, purple, pink, orange</p>
             <input
                 type="text"
                 value={color}

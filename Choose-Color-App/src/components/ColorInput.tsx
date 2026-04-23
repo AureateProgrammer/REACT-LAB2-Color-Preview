@@ -8,6 +8,8 @@ type ColorInputProps = {
 };
 
 function ColorInput({ onColorChange }: ColorInputProps) {
+    //creating a local state
+    const[color,setColor]=useState('')
     //this runs whenever the user types in the input
   return (
     <input
@@ -18,7 +20,11 @@ function ColorInput({ onColorChange }: ColorInputProps) {
     />
   );
   function handleChange(event: React.ChangeEvent<HTMLInputElement>) {
-    onColorChange(event.target.value);
+    //grabbing the state/user input information. 
+    const newcolor = event.target.value;
+    onColorChange(newcolor);
+    setColor(newcolor)
+
   }
 }
 

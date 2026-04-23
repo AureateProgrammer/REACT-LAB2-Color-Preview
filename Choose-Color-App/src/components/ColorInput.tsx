@@ -20,7 +20,7 @@ function ColorInput({ onColorChange }: ColorInputProps) {
     }
 
     return (
-        <div>
+        <div className="colorBox">
             <input
                 type="text"
                 value={color}

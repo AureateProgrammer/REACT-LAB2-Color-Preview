@@ -1,0 +1,13 @@
+.colorBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+}
+
+.colorBox div {
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+}

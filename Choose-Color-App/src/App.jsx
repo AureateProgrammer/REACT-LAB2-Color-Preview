@@ -1,4 +1,5 @@
 import ColorInput from "./components/ColorInput"
+import "./App.css"
 
 function App() {
   return (
